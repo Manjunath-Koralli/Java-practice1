@@ -19,7 +19,7 @@ public class Object1 {
 		
 		//using new instance
 		try {
-			Class cls = Class.forName("Example"); 
+			Class cls = Class.forName("com.ex.Objects1.Example"); 
             Example ex1 = (Example)cls.newInstance(); 
             ex1.display(); 
 		} catch (ClassNotFoundException e) {
