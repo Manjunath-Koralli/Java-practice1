@@ -27,6 +27,7 @@ public class Loop1 {
         while (x < 2); 
         
         System.out.println();
+        
         for (int i=0;i<3;i++) 
             System.out.println("Value of i:" + i); 
         
