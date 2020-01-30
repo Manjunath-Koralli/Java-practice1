@@ -12,6 +12,7 @@ public class MemberInner {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		//Inner1 in1 = new Outer1().new Inner1();
 		Outer1.Inner1 in1 = new Outer1().new Inner1();
 		in1.show();
 

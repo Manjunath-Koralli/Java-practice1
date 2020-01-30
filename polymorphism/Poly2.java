@@ -7,7 +7,10 @@ class Bank{
 }
 
 class SBI extends Bank{
+	Bank b = new Bank();
+	
 	int getRateOfInterest() {
+		System.out.println(b.getRateOfInterest());
 		return 7;
 	}
 }
@@ -24,9 +27,13 @@ public class Poly2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Bank b1 = new SBI();
-		b1.getRateOfInterest();
+		System.out.println(b1.getRateOfInterest());
 		
 		//SBI s1 = new Bank();
+		
+		SBI sbi = new SBI();
+		System.out.println(sbi.getRateOfInterest());
+		//sbi.b;
 		
 
 	}
