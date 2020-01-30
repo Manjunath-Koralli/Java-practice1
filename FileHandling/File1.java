@@ -3,6 +3,7 @@ package com.ex.FileHandling;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -24,6 +25,8 @@ public class File1 {
 			e.printStackTrace();
 		}
 		
+		System.out.println();
+		
 		if(f1.exists()) {
 			System.out.println(f1.getName());
 			System.out.println(f1.getAbsolutePath());
@@ -36,6 +39,8 @@ public class File1 {
 			System.out.println("doesnt exist");
 		}
 		
+		System.out.println();
+		
 		try {
 			FileWriter fwriter = new FileWriter("C:\\Users\\Ransomware_Manja\\eclipse-workspace\\Java_Practice\\file3.txt");
 			fwriter.write("Manjunath Sahyadri College");
@@ -47,6 +52,24 @@ public class File1 {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
+		
+		System.out.println();
+		
+		try {
+			FileReader fr = new FileReader(f1);
+			int ch;
+			while((ch = fr.read())!= -1) {
+				System.out.print((char)ch);
+			}
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println();
 		
 		try {
 			Scanner sc = new Scanner(f1);
