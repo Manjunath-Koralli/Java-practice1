@@ -1,5 +1,6 @@
 package com.ex.Exeptions;
 
+//public class Exception4 throws IllegalAccessException{
 public class Exception4 {
 
 	static void fun() throws IllegalAccessException 
