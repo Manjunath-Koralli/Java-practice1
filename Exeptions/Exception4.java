@@ -7,7 +7,8 @@ public class Exception4 {
         System.out.println("Inside fun(). "); 
         throw new IllegalAccessException("demo"); 
     }
-	public static void main(String[] args) {
+	//handles exception
+	/*public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		try
@@ -19,6 +20,16 @@ public class Exception4 {
             System.out.println("caught in main."); 
         } 
 
+	}*/
+	
+	//doesnt handle
+	public static void main(String[] args) throws IllegalAccessException{
+		// TODO Auto-generated method stub
+		fun(); 
+        
+
 	}
+	
+	
 
 }
