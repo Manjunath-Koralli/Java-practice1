@@ -29,6 +29,7 @@ public class Exception1 {
         }
         finally
         { 
+        	System.exit(0);
             System.out.println("finally block executed"); 
         }
           
