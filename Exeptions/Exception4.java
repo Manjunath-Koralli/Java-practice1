@@ -24,7 +24,7 @@ public class Exception4 {
 	}*/
 	
 	//doesnt handle
-	public static void main(String[] args) throws IllegalAccessException{
+	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
 		fun(); 
         

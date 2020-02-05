@@ -29,12 +29,13 @@ public class Exception1 {
         }
         finally
         { 
-        	System.exit(0);
-            System.out.println("finally block executed"); 
+        	//System.exit(0);
+        	return;
+            //System.out.println("finally block executed"); 
         }
           
        
-        System.out.println("Outside try-catch clause"); 
+        //System.out.println("Outside try-catch clause"); 
 
 	}
 
