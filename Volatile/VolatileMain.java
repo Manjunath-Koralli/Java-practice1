@@ -8,8 +8,10 @@ public class VolatileMain {
 		Thread[] threads = new Thread[noOfThreads];     //creating Thread array   
 		for(int i = 0; i < noOfThreads; ++i)  
 			threads[i] = new VolatileThread(volatileData);  
+		
 		for(int i = 0; i < noOfThreads; ++i)  
 			threads[i].start();                 //starts all reader threads  
+		
 		for(int i = 0; i < noOfThreads; ++i) {
 			try {
 				threads[i].join();
