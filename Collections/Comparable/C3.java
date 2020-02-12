@@ -88,6 +88,10 @@ public class C3 {
             System.out.println(movie.getYear() + " " + 
                                movie.getRating() + " " + 
                                movie.getName()+" "); 
+        
+        
+        
+         
 
 	}
 
