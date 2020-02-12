@@ -28,6 +28,8 @@ public class ArrayList1 {
         // Printing elements one by one 
         for (int i=0; i<arrli.size(); i++) 
             System.out.print(arrli.get(i)+" "); 
+        
+        System.out.println(arrli.get(arrli.size()+1));
 
 	}
 
